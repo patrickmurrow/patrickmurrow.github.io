@@ -198,8 +198,8 @@ div.panel-items > div > div {
     text-align: left;
 }
 
-.content td,th {
-  padding-left: 10px;;
+.content th,td {
+  padding-left: 10px;
 }
 
 tr:nth-child(odd) {background-color: #f97158}
