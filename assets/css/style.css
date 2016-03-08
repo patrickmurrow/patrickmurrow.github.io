@@ -103,7 +103,7 @@ a:hover {
     -moz-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
-    justify-content: center;
+    justify-content: left;
     -webkit-box-align: center;
     -moz-box-align: center;
     -webkit-align-items: center;
@@ -206,10 +206,6 @@ div.panel-items > div > div {
   font-size: 3em;
   font-weight: 300;
   margin: 0 0 20px 0;
-}
-
-.content table {
-  
 }
 
 .content article {
