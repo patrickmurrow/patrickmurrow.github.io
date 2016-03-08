@@ -190,6 +190,15 @@ div.panel-items > div > div {
   -webkit-overflow-scrolling: touch;
 }
 
+.content table {
+    border-collapse: collapse;
+}
+
+.content table, th, td {
+    border: 1px solid black;
+}
+
+
 /* Custom content */
 .loop {
   padding-right: 220px;
