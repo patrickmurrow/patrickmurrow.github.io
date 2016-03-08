@@ -200,7 +200,7 @@ div.panel-items > div > div {
 
 }
 
-tr:nth-child(even) {background-color: #f2f2f2}
+tr:nth-child(even) {background-color: #0DD56D}
 
 .content th{
   padding-bottom: 20px;
