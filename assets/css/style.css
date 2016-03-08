@@ -200,10 +200,14 @@ div.panel-items > div > div {
 
 }
 
-tr:nth-child(even) {background-color: #f97158}
+.content td {
+  padding-top: 4px;
+}
+
+tr:nth-child(odd) {background-color: #f97158}
 
 .content th{
-  padding-bottom: 1px;
+  padding-bottom: 4px;
   border-bottom: 2px solid;
   border-color: #f2ede3;
 }
