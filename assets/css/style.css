@@ -200,10 +200,6 @@ div.panel-items > div > div {
 
 }
 
-.content tbody {
-  padding-top: 6px;
-}
-
 tr:nth-child(odd) {background-color: #f97158}
 
 .content th{
