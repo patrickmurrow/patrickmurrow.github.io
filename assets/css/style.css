@@ -201,13 +201,14 @@ div.panel-items > div > div {
 }
 
 .content td {
-  padding-top: 4px;
+  padding-top: 6px;
 }
 
 tr:nth-child(odd) {background-color: #f97158}
 
 .content th{
-  padding-bottom: 4px;
+  background-color: #FA987D;
+  padding-bottom: 6px;
   border-bottom: 2px solid;
   border-color: #f2ede3;
 }
