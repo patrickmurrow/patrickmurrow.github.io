@@ -104,11 +104,11 @@ a:hover {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: left;
-    -moz-box-align: left;
-    -webkit-align-items: left;
-    -ms-flex-align: left;
-    align-items: left;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .box h2 {
@@ -177,7 +177,7 @@ a:hover {
 
 .content,
 div.panel-items > div > div {
-  opacity: 0;
+  /*opacity: 0;
   pointer-events: none;
   position: absolute;
   top: 60px;
@@ -187,7 +187,7 @@ div.panel-items > div > div {
   padding: 0 20px;
   overflow: hidden;
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;*/
 }
 
 /* Custom content */
