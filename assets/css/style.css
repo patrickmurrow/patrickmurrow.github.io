@@ -200,10 +200,10 @@ div.panel-items > div > div {
 }
 
 .content th{
-  padding-bottom: 15px;
+  padding-bottom: 50px;
 }
 
-.content < tr:nth-child(even) {background-color: #0DFF6D}
+.content > tr:nth-child(even) {background-color: #0DFF6D}
 
 
 /* Custom content */
