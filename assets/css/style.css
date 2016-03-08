@@ -217,6 +217,12 @@ tr:nth-child(even) {background-color: #47B888}
   font-size: 1.7em;
   line-height: 1.8;
 }
+.content .para {
+  margin: 0 auto;
+  padding-bottom: 15px;
+  font-size: 1.0em;
+  line-height: 1.8;
+}
 
 .content h2 {
   font-size: 3em;
