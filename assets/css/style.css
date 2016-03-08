@@ -60,13 +60,13 @@ a:hover {
 .main > section:first-child {
   top: 0;
   left: 0;
-  background: #272345;
+  background: #39326f;
 }
 
 .main > section:nth-child(2) {
   top: 0;
   left: 50%;
-  background: #514d6f;
+  background: #5e5c6f;
 }
 
 .main > section:nth-child(3) {
@@ -406,10 +406,10 @@ div.panel-items > div.hide-current-work {
 }
 
 .main > section:first-child.expand {
-  background: #272345;
+  background: #39326f;
 }
 .main > section:nth-child(2).expand {
-  background: #514d6f;
+  background: #5e5c6f;
 }
 .main > section:nth-child(3).expand {
   background: #FA987D;
