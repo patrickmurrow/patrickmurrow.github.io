@@ -78,7 +78,7 @@ a:hover {
 .main > section:nth-child(4) {
   top: 50%;
   left: 50%;
-  background: #ff002f;
+  background: #F06060;
 }
 
 .box {
@@ -406,16 +406,16 @@ div.panel-items > div.hide-current-work {
 }
 
 .main > section:first-child.expand {
-  background: #EE4444;
+  background: #1c183b;
 }
 .main > section:nth-child(2).expand {
-  background: #F98262;
+  background: #514d6f;
 }
 .main > section:nth-child(3).expand {
-  background: #4BBE8E;
+  background: #ff6549;
 }
 .main > section:nth-child(4).expand {
-  background: #0D8278;
+  background: #F06060;
 }
 
 .box {
