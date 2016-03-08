@@ -204,8 +204,8 @@ tr:nth-child(even) {background-color: #f97158}
 
 .content th{
   padding-bottom: 1px;
-  border-bottom: 8px solid;
-  border-color: #ffffee;
+  border-bottom: 6px solid;
+  border-color: #f2ede3;
 }
 
 /* Custom content */
