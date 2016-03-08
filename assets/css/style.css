@@ -180,11 +180,11 @@ div.panel-items > div > div {
   opacity: 0;
   pointer-events: none;
   position: absolute;
-  /*top: 60px;
-  left: 27px;
+  top: 60px;
+  left: 0px;
   right: 27px;
   bottom: 30px;
-  padding: 0 20px;*/
+  padding: 0 20px;
   overflow: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
