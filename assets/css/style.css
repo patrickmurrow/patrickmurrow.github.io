@@ -199,6 +199,12 @@ div.panel-items > div > div {
     padding: 10px;
 }
 
+.content th{
+  padding-bottom: 15px;
+}
+
+.content < tr:nth-child(even) {background-color: #0DFF6D}
+
 
 /* Custom content */
 .loop {
