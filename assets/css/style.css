@@ -203,7 +203,7 @@ div.panel-items > div > div {
 tr:nth-child(even) {background-color: #f97158}
 
 .content th{
-  padding-bottom: 20px;
+  padding-bottom: 1px;
   border-bottom: 8px solid;
   border-color: #ffffee;
 }
