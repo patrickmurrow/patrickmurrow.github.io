@@ -198,7 +198,11 @@ div.panel-items > div > div {
     text-align: left;
 }
 
-.content th,td {
+.content th {
+  padding-left: 10px;
+}
+
+.content td {
   padding-left: 10px;
 }
 
