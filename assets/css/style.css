@@ -192,12 +192,15 @@ div.panel-items > div > div {
 
 .content table {
     border-collapse: collapse;
-    padding-right: 10px;
-    padding-left: 10px;
 }
 
 .content table, th, td {
     text-align: left;
+}
+
+.content td,th {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 tr:nth-child(odd) {background-color: #f97158}
