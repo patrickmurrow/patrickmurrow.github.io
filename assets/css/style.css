@@ -198,11 +198,7 @@ div.panel-items > div > div {
     text-align: left;
 }
 
-.content th {
-  padding-left: 10px;
-}
-
-.content td {
+.content tr {
   padding-left: 10px;
 }
 
@@ -211,6 +207,7 @@ tr:nth-child(odd) {background-color: #f97158}
 .content th{
   background-color: #FA987D;
   padding-bottom: 6px;
+  padding-left: 10px;
   border-bottom: 2px solid;
   border-color: #f2ede3;
 }
