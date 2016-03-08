@@ -182,9 +182,9 @@ div.panel-items > div > div {
   position: absolute;
   top: 60px;
   left: 0px;
-  right: 27px;
-  bottom: 30px;
-  padding: 0 20px;
+  right: 14px;
+  bottom: 15px;
+  padding: 0 10px;
   overflow: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
