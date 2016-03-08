@@ -196,15 +196,13 @@ div.panel-items > div > div {
 
 .content table, th, td {
     text-align: left;
-    padding: 10px;
+    padding-right: 20px;
+
 }
 
 .content th{
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 }
-
-.content > tr:nth-child(even) {background-color: #0DFF6D}
-
 
 /* Custom content */
 .loop {
