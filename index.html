@@ -92,8 +92,8 @@ Previous Employment<br>
 • Created Client-Supplier database system for Wakefield metals Auckland using Microsoft Access (2013)<br><br>
 
 Sport<br>
-• 1st XI cricket – 63 games – Best All-Round Fielder 2012<br>
-• Rugby – Zingari-Richmond RFC Premier Colts<br>
+• Rugby – Zingari-Richmond RFC Premiers (2016)<br>
+• 1st XI cricket – 63 games (2010-2012) – Best All-Round Fielder 2012<br>
 • Golf (Socially)<br><br>
 
 Service<br>
@@ -102,9 +102,9 @@ Service<br>
 
 Other Achievements<br>
 
-• Outward Bound-April 2012 (21 day Mind, Body and Soul course)<br>
+• Outward Bound - April 2012 (21 day Mind, Body and Soul course)<br>
 • Duke of Edinburgh Bronze and Silver<br>
-• Monetary Policy Challenge-Regional Finalists (Team event run by Reserve Bank NZ)<br>
+• Monetary Policy Challenge-Regional Finalist (Team event run by Reserve Bank NZ)<br>
 • NZQA Approved Barista
 </p>
 </div>
@@ -361,7 +361,7 @@ Source code can be found <a href="https://github.com/patrickmurrow/lockdown">her
       The summer bursary involved EEG headsets, in particular, portable EEG headsets, with the goal of using and analysing the data from the headsets in real time. Some projects that the team are hoping to carry out include, controlling a drone (<a href="http://www.otago.ac.nz/sciences/research/highlights/otago517003.html">Drone Demo</a>), testing susceptibility to depression, and various other neuro-feedback applications.<br>
       My main goal was to make a general application where data can be viewed and stored in real time so that it can be used for analysis and processing, however I carried out many other tasks whilst developing this application<br>
       The first task I completed was getting the Brainlink EEG headset to connect via the command line (without the Bluetooth manager), and stay connected, i.e. if the connection was lost, it would be reconnected when the headset became in range or was available to be connected again.<br>
-      Then I created the start of the application, which included a menu, settings window (which used the bash scripts to connect via bluetooth without the bluetooth manager), calibration window and display window. This was initially created for the single channel Brainlink headset, but was adapted to facilitate other headsets with multiple channels.<br>
+      Then I started the application, which included a menu, settings window (which used the bash scripts to connect via bluetooth without the bluetooth manager), calibration window and display window. This was initially created for the single channel Brainlink headset, but was adapted to facilitate other headsets with multiple channels.<br>
       I was then given the Muse EEG headset, which has 4 channels available, so the next task was to have all 4 channels display on the GUI at the same time. This was done by integrating extraction code with the current program, so that the EEG would be saved in the same way the EEG was saved for the Brainlink headset. Once the EEG data was integrated, the display was adapted to display all 4 of the channels.<br>
       The third and final headset (OpenBCI) had the capacity for 16 channels, this meant that there would be a lot of processing (16x more than the Brainlink headset), this caused problems with efficiency; initially I was given some extraction python code for the OpenBCI headset, however this meant that the C++ program had to run the python code in a new process and convert the incoming data from python compatibility to C++ compatibility in realtime, since there were 16 channels, this wasn’t efficient. Instead, I implemented a parser/serial, C extraction architecture. This was done by firstly sending a command to the headset to start the streaming and then by reading a buffer where the raw data was coming in from a process. The data was then converted from 24 bit (default) to 32 bit integers.<br>
       The raw data being received from the headset was very noisy, so needed filters. I created a notch filter that adapted the data for the frequencies received with New Zealand power. On top of that I implemented a band-pass filter to filter out other disrupting signals. The GUI gives a selection of filters that can be applied in real time.<br>
