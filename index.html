@@ -86,7 +86,7 @@ Programming Experience<br>
 
 Previous Employment<br>
 
-• General Programmer - University of Otago Computer Science Department (Summer Bursary - 2016)<br>
+• General Programmer (C/C++) - University of Otago Computer Science Department (Summer Bursary - 2016)<br>
 • Mitre 10 Mega Upper Hutt – Customer Service (2014)<br>
 • Private tutoring for 100 level Computer Science papers (2015-2016)<br>
 • Created Client-Supplier database system for Wakefield metals Auckland using Microsoft Access (2013)<br><br>
@@ -336,18 +336,17 @@ Other Achievements<br>
     <div>
       <h3>Lockdown</h3>
       <img src="assets/img/lockdown_ss.jpg?v=3d1f7480f5">
-      <p>Concept Vision: Lockdown is a 2D sidescrolling stealth platformer where your goal is to escape from prison.<br><br>
-Story: Your identical twin brother Jordan escapes from prison. The corrupt prison guards attempt to cover up his escape by capturing and keeping you in prison instead. You are a law-abiding citizen named Alijah who is captured by the guards when you go to visit your brother. You need to follow the footsteps and escape plan of your brother to escape, and find your brother to prove your innocence.
-Unique and fun game elements: This game’s art style of pixellated main characters with more detailed backgrounds in a prison environment will create a unique aesthetic. This will be combined with an original story to create an immersive world.<br><br>
-The stealth based gameplay will include sound as a unique mechanic. Players will need to be careful not to attract attention by making too much noise, but can also use this mechanic to their advantage to distract guards with the slingshot.
-Sneaking around the prison past guards will create a fun experience of pushing against a corrupt, rigid system.<br><br>
+      <p>Lockdown is a 2D sidescrolling stealth platformer where your goal is to escape from prison.<br><br>
+Your identical twin brother Jordan escapes from prison. The corrupt prison guards attempt to cover up his escape by capturing and keeping you in prison instead. You need to follow the footsteps and escape plan of your brother to escape, and find your brother to prove your innocence.
+This game’s art is basic, with pixel characters and objects, all made from scratch, and a slightly more detailed background, created from a tileset. Animations, colliders and bump maps were applied to characters, objects and backgrounds.<br><br>
+The stealth based gameplay includes sound as a unique mechanic. Players need to be careful not to attract attention by making too much noise, but can also use this mechanic to their advantage to distract guards with their slingshot. In addition to this, the player can also use the shadows and environment to keep out of the guards sight.<br><br>
 
-Feature list: Stealth as a core game mechanic to hide from AI using objects, darkness, and sound. Limited combat. Various classes of enemies e.g. guards, prison gangs. Interactive characters. Bonuses for extremely stealthy gameplay. It will be easy to restart a level from the beginning or save/load your progress from the nearest level. Player death will result in restart from the beginning of the level. Decision dependent enemies; Talk to two people (gang leaders) in conflict and decide which person to help. The enemies will be the gang that you didn’t decide to help.<br><br>
-Some planned levels may include:<br>
+Levels and features include:<br>
+• Slingshot that can be used to break lights and distract guards<br>
 • Fully lit room where there’s an emphasis on using environment objects rather than the dark<br>
-• Sniper tower with a moving spotlight, where one hit from the sniper will drain all the player’s health<br>
-• Levels with small rooms which are not compulsory to enter, but may hold health or ammunition<br>
-• Rooms that are only accessible with key cards or after doing a favor for a character who is blocking the door<br><br>
+• Sniper towers with moving spotlights<br>
+• Guards with guns, guards with torches<br>
+• Rooms that are only accessible after finding a key card<br><br>
 The game can be played <a href="http://www.cs.otago.ac.nz/coursework/cosc360/game-projects-lockdown.php">here</a> with the Unity web plugin (not supported in Google Chrome).<br><br>
 Source code can be found <a href="https://github.com/patrickmurrow/lockdown">here</a> however this project was completed as a team, and the code was written collaboratively.
 
@@ -359,16 +358,16 @@ Source code can be found <a href="https://github.com/patrickmurrow/lockdown">her
       <h3>Summer Bursary - EEG Headsets</h3>
       <img src="assets/img/OpenBCI.jpg?v=3d1f7480f5">
       <p>This summer bursary required knowledge of C++ and Qt, both of which I spent most of my time using. So for the start of the project(s) I got familiar with C++ and Qt, in particular the C++ code that I inherited.<br>
-I did this by creating a dummy EEG headset, which generated values similar to that of the Brainlink EEG portable headset. Along with this, I created a Qt GUI, which had multiple widgets adjusting based on the generated values.<br>
-The next task I completed was getting the Brainlink headset to connect via the command line (without the Bluetooth manager), and stay connected, i.e. if the connection was lost, it would be reconnected when the headset became in range or was available to be connected again.<br>
-One of the goals for the summer project was to create a GUI environment for all sorts of features, so I created a Qt desktop application. The application starts off on a menu, which can navigate to a display window, calibrate window, and settings window. The display window was made to display the incoming EEG in real time. The calibrate window was created to, in the future, be able to store baseline EEG for a user. Once the calibration test is started the user will be instructed to close their eyes for about 10 seconds and open them for 10 seconds while the EEG was being recorded. The data can then be processed. The settings window acts as a Bluetooth manager for the application, and uses bash scripts to connect to a selected device after a search.<br>
-After I was comfortable with the Qt environment and the headset, I started on an EEG display for the single channel Brainlink headset. I did this by integrating the architecture I inherited, and my own code for displaying points in real time. This worked well and was created so that in the future, headsets with multiple channels could work on the same display.<br>
-This was the next step, the Muse EEG headset has 4 channels available, so the next task was to have all 4 channels display on the GUI at the same time. This was done by integrating extraction code with the current program, so that the EEG would be saved in the same way the EEG was saved for the Brainlink headset. Once the EEG data was integrated, the display was adapted to display all 4 of the channels.<br>
-The third and final headset (OpenBCI) had the capacity for 16 channels, this meant that there would be a lot of processing (16x more than the Brainlink headset), this caused problems with efficiency; initially I was given some extraction python code for the OpenBCI headset, however this meant that the C++ program had to run the python code in a new process and convert the incoming data from python compatibility to C++ compatibility in realtime, since there were 16 channels, this wasn’t efficient. Instead, I implemented a parser/serial, C extraction architecture. This was done by firstly sending a command to the headset to start the streaming and then by reading a buffer where the raw data was coming in from a process. The data was then converted from 24 bit (default) to 32 bit integers.<br>
-The raw data being received from the headset was very noisy, so needed filters. I created a notch filter that adapted the data for the frequencies received with New Zealand power. On top of that I implemented a band-pass filter to filter out other disrupting signals. The GUI gives a selection of filters that can be applied in real time.<br>
-I then tried using the same GUI as was used for the Brainlink (single channel) and Muse (4 channel) however the data was coming in at a higher rate and there was more of it. So I created another displayer from scratch that was more basic but much more efficient. The display adapts based on the range of the data that is to be displayed, i.e. zooms out when there is a huge spike, and zooms in where the data is stable.<br>
-I also added features, which allowed a certain number of channels to be displayed, and allowed adjusting of EEG display speed.<br><br><br>
-<a href="https://github.com/patrickmurrow/eeg-app">Here</a> is a public repository for the commericially insensitive code I wrote.
+      The summer bursary involved EEG headsets, in particular, portable EEG headsets, with the goal of using and analysing the data from the headsets in real time. Some projects that the team are hoping to carry out include, controlling a drone (<a href="http://www.otago.ac.nz/sciences/research/highlights/otago517003.html">Drone Demo</a>), testing susceptibility to depression, and various other neuro-feedback applications.<br>
+      My main goal was to make a general application where data can be viewed and stored in real time so that it can be used for analysis and processing, however I carried out many other tasks whilst developing this application<br>
+      The first task I completed was getting the Brainlink EEG headset to connect via the command line (without the Bluetooth manager), and stay connected, i.e. if the connection was lost, it would be reconnected when the headset became in range or was available to be connected again.<br>
+      Then I created the start of the application, which included a menu, settings window (which used the bash scripts to connect via bluetooth without the bluetooth manager), calibration window and display window. This was initially created for the single channel Brainlink headset, but was adapted to facilitate other headsets with multiple channels.<br>
+      I was then given the Muse EEG headset, which has 4 channels available, so the next task was to have all 4 channels display on the GUI at the same time. This was done by integrating extraction code with the current program, so that the EEG would be saved in the same way the EEG was saved for the Brainlink headset. Once the EEG data was integrated, the display was adapted to display all 4 of the channels.<br>
+      The third and final headset (OpenBCI) had the capacity for 16 channels, this meant that there would be a lot of processing (16x more than the Brainlink headset), this caused problems with efficiency; initially I was given some extraction python code for the OpenBCI headset, however this meant that the C++ program had to run the python code in a new process and convert the incoming data from python compatibility to C++ compatibility in realtime, since there were 16 channels, this wasn’t efficient. Instead, I implemented a parser/serial, C extraction architecture. This was done by firstly sending a command to the headset to start the streaming and then by reading a buffer where the raw data was coming in from a process. The data was then converted from 24 bit (default) to 32 bit integers.<br>
+      The raw data being received from the headset was very noisy, so needed filters. I created a notch filter that adapted the data for the frequencies received with New Zealand power. On top of that I implemented a band-pass filter to filter out other disrupting signals. The GUI gives a selection of filters that can be applied in real time.<br>
+      I then tried using the same GUI as was used for the Brainlink (single channel) and Muse (4 channel) however the data was coming in at a higher rate and there was more of it. So I created another displayer from scratch that was more basic but much more efficient. The display adapts based on the range of the data that is to be displayed, i.e. zooms out when there is a huge spike, and zooms in where the data is stable.<br>
+      I also added features, which allowed a certain number of channels to be displayed, and allowed adjusting of EEG display speed.<br><br><br>
+      <a href="https://github.com/patrickmurrow/eeg-app">Here</a> is a public repository for the commericially insensitive code I wrote.<br><br>     
 </p>
     </div>
   </div>
